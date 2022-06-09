@@ -1,0 +1,53 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+Projects
+{% endblock %}
+{% block main-content %}
+{% load static %}
+<div class="all-projects">
+    <h1 class="all-projects__title-projects title-projects">
+        <span class="title-projects__first">НАШИ</span>
+        <br>ПРОЕКТЫ
+    </h1>
+    <section class="all-projects__project1 project1">
+        <img class="project1__img img" src="{% static 'main/img/projects/project1.png' %}" alt="photo-project1">
+        <div class="project1__container-info container-info">
+            <p class="container-info__name-project">Общеобразовательная школа</p>
+            <p class="container-info__info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen
+                book.</p>
+            <a class="container-info__add-info" href="">СМОТРЕТЬ&rarr;</a>
+        </div>
+    </section>
+    <section class="all-projects__project2 project2">
+        <img class="project2__img img" src="{% static 'main/img/projects/project2.png' %}" alt="photo-project2">
+        <div class="project2__container-info container-info">
+            <p class="container-info__name-project">Паркинг на 500 автомобилей</p>
+            <p class="container-info__info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a
+                type specimen
+                book.</p>
+            <a class="container-info__add-info" href="project2">СМОТРЕТЬ&rarr;</a>
+        </div>
+    </section>
+    <section class="all-projects__project3 project3">
+        <img class="project3__img img" src="{% static 'main/img/projects/project3.png' %}" alt="photo-project3">
+        <div class="project3__container-info container-info">
+            <p class="container-info__name-project">Проект интерьера офиса</p>
+            <p class="container-info__info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a
+                type specimen
+                book.</p>
+            <a class="container-info__add-info" href="">СМОТРЕТЬ&rarr;</a>
+        </div>
+    </section>
+</div>
+{% endblock %}

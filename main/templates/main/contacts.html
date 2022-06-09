@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+Contacts
+{% endblock %}
+{% block main-content %}
+<section class="contact-information">
+    <div class="contact-information__contact-info contact-info">
+        <h1 class="contact-info__title-info title-info">
+            <span class="title-info__first">КОНТАКТНАЯ</span>
+            <br>ИНФОРМАЦИЯ
+        </h1>
+        <p class="contact-info__name-company">&laquo;Digital Project&raquo;</p>
+        <p class="contact-info__address">Lorem ipsum, Lorem ipsum 10</p>
+        <p class="contact-info__number">+380 (000) 00 00 00</p>
+        <p class="contact-info__email">Galym.sultanov@gmail.com</p>
+    </div>
+    <iframe class="contact-information__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5441175.719743074!2d26.691448026734925!3d48.248513771753395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sua!4v1651516891684!5m2!1sru!2sua"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+{% endblock %}

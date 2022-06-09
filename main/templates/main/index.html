@@ -1,0 +1,77 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+Home
+{% endblock %}
+{% block main-content %}
+	<div class="main-content">
+		<section class="main-content__block1 block1">
+			<div class="block1__title title">
+				<span class="title__first">PROJECT</span>
+				<br>NURTOWN
+			</div>
+			{% load static %}
+			<img class="block1__photo" src="{% static 'main/img/home/home_main.png' %}" alt="main-photo">
+		</section>
+		<section class="main-content__block2 block2">
+			<div class="block2__about about">
+				<div class="about__block-pictures block-pictures">
+					<img class="block-pictures__photo1" src="{% static 'main/img/home/photo1.png' %}" alt="building">
+					<img class="block-pictures__photo2" src="{% static 'main/img/home/photo2.png' %}" alt="building-small">
+				</div>
+				<img class="about__photo3" src="{% static 'main/img/home/photo3.png' %}" alt="building-big">
+				<div class="about__info info">
+					<h1 class="info__title">О компании</h1>
+					<p class="info__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+						Ipsum has been the industry's standard
+						dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+						make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+						remaining essentially unchanged.</p>
+				</div>
+			</div>
+			<div class="block2__main-tasks main-tasks">
+				<h1 class="main-tasks__title">Основные задачи</h1>
+				<div class="main-tasks__task1 task1">
+					<p class="task1__number1 numbers">1</p>
+					<p class="task1__info info-task">Создание комфортных условий и повышение качества обслуживания клиентов
+					</p>
+				</div>
+				<div class="main-tasks__task2 task2">
+					<p class="task2__number2 numbers">2</p>
+					<p class="task2__info info-task">Постоянно совершенствовать качество предоставляемых услуг путем
+						обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+				</div>
+			</div>
+		</section>
+		<section class="main-content__projects projects">
+			<h1 class="projects__title">Наши проекты</h1>
+			<div class="projects__block1-pictures">
+				<div class="block1-pictures__info-card info-card">
+					<h1 class="info-card__text">ДОСУГОВЫЙ ЦЕНТР</h1>
+					<img class="info-card__img" src="{% static 'main/img/home/project_main.png' %}" alt="with-text">
+				</div>
+				<img class="block1-pictures__image" src="{% static 'main/img/home/image15.png' %}" alt="art-building">
+			</div>
+			<div class="projects__block2-pictures block2-pictures">
+				<img class="block2-pictures__photo1" src="{% static 'main/img/home/image16.png' %}" alt="sports-complex">
+				<img class="block2-pictures__photo2" src="{% static 'main/img/home/image17.png' %}" alt="residential-building">
+				<img class="block2-pictures__photo3" src="{% static 'main/img/home/image18.png' %}" alt="unusual-building">
+			</div>
+			<a class="projects__btn-projects" href="projects">ВСЕ ПРОЕКТЫ &rarr;</a>
+		</section>
+		<section class="main-content__contacts contacts">
+			<h1 class="contacts__title">Связаться с нами</h1>
+			<form class="contacts__form form" action="#" method="post">
+				{% csrf_token %}
+				<input class="form__name inpts" type="text" placeholder="Имя" name="name">
+				<input class="form__phone-number inpts" type="text" placeholder="Номер телефона*" required name="phoneNumber">
+				<input class="form__email inpts" type="email" placeholder="E-mail*" required name="email">
+				<input class="form__question inpts" type="text" placeholder="Интересующий товар/услуга" name="service">
+				<textarea class="form__message inpts" placeholder="Сообщение*" cols="30" rows="10" required name="message"></textarea>
+				<label class="form__confirmation"> <input type="checkbox" checked required>Отправляя заявку Вы соглашаетесь
+					с политикой конфиденциальности</label>
+				<button class="form__btn" type="submit">ОТПРАВИТЬ &rarr;</button>
+			</form>
+			<img class="contacts__photo" src="{% static 'main/img/home/contacts.png' %}" alt="man-with-phone">
+		</section>
+	</div>
+{% endblock %}

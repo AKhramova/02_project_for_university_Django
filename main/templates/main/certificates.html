@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+Certificates
+{% endblock %}
+{% block main-content %}
+{% load static %}
+<div class="container-certificates">
+    <h1 class="container-certificates__title title">
+        <span class="title__first">СЕРТИФИКАТЫ</span>
+        <br>КОМПАНИИ
+    </h1>
+    <div class="container-certificates__content-certificates content-certificates">
+        <img class="content-certificates__certificate1" src="{% static 'main/img/certificates/certificate1.png' %}"
+            alt="certificate1">
+        <img class="content-certificates__certificate2" src="{% static 'main/img/certificates/certificate2.png' %}"
+            alt="certificate2">
+        <img class="content-certificates__certificate3" src="{% static 'main/img/certificates/certificate3.png' %}"
+            alt="certificate3">
+    </div>
+</div>
+{% endblock %}
